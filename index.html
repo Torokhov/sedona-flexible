@@ -74,49 +74,65 @@
           <h4 class="reason-block__number">&mdash;№4&mdash;</h4>
           <p class="reason-block__describe">Большинство едет в Гранд Каньон и толпится там</p>
         </article>
-        <section class="hotel-search">
-          <div class="hotel-search__header-wrapper">
-            <h2 class="hotel-search__header">Заинтересовались?</h2>
-            <p class="hotel-search__describe">
-              Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
-            </p>
-            <a class="btn btn--show-search-form" href="#">Поиск гостиницы в Седоне</a>
-            <form class="seach-form" method="get">
-              <div class="date-wrapper">
-                <label for="date-arrival">Дата заезда:</label>
-                <input type="text" id="date-arrival" name="date-arrval">
-                <input type="button" class="btn-calendar" name="btn-calendar" value="Календарь">
+      </section>
+      <section class="hotel-search">
+        <div class="hotel-search__header-wrapper">
+          <h2 class="hotel-search__header">Заинтересовались?</h2>
+          <p class="hotel-search__describe">
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <a class="btn btn--show-search-form" href="#">Поиск гостиницы в Седоне</a>
+          <form class="search-form" method="get">
+            <div class="date-wrapper">
+              <label for="date-arrival">Дата заезда:</label>
+              <input type="text" id="date-arrival" name="date-arrval">
+              <input type="button" class="btn-calendar" name="btn-calendar" value="Календарь">
+            </div>
+            <div class="date-wrapper">
+              <label for="date-depart">Дата заезда:</label>
+              <input type="text" id="date-depart" name="date-depart">
+              <input type="button" class="btn-calendar" name="btn-calendar" value="Календарь">
+            </div>
+            <div class="people-wrapper">
+              <div class="adults-wrapper">
+                <label for="adults-amount">Взрослые:</label>
+                <div class="counter">
+                  <input type="button" class="btn-minus" name="btn-minus" value="-">
+                  <input type="text" id="adults-amount" name="adults-amount" value="2">
+                  <input type="button" class="btn-plus" name="btn-minus" value="-">
+                </div>
               </div>
-              <div class="date-wrapper">
-                <label for="date-depart">Дата заезда:</label>
-                <input type="text" id="date-depart" name="date-depart">
-                <input type="button" class="btn-calendar" name="btn-calendar" value="Календарь">
-              </div>
-              <div class="people-wrapper">
-                <div class="adults-wrapper">
-                  <label for="adults-amount">Взрослые:</label>
+              <div class="childrens-wrapper">
+                <label for="childrens-amount">Дети:</label>
                   <div class="counter">
                     <input type="button" class="btn-minus" name="btn-minus" value="-">
                     <input type="text" id="adults-amount" name="adults-amount" value="2">
                     <input type="button" class="btn-plus" name="btn-minus" value="-">
-                  </div>
-                </div>
-                <div class="childrens-wrapper">
-                  <label for="childrens-amount">Дети:</label>
-                    <div class="counter">
-                      <input type="button" class="btn-minus" name="btn-minus" value="-">
-                      <input type="text" id="adults-amount" name="adults-amount" value="2">
-                      <input type="button" class="btn-plus" name="btn-minus" value="-">
-                  </div>
                 </div>
               </div>
-              <input type="submit" class="submit-search-btn" name="submit-search-btn" value="Найти">
-            </form>
-          </div>
-        </section>
+            </div>
+            <input type="submit" class="submit-search-btn" name="submit-search-btn" value="Найти">
+          </form>
+        </div>
+        <div class="map-wrapper">
+        </div>
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
+      <section class="hashtag">
+        <b class="hashtag__describe">#VISITSEDONA</b>
+      </section>
+      <section class="social-buttons">
+        <a class="social-btn--twitter" href="#">Twitter</a>
+        <a class="social-btn--facebook" href="#">Facebook</a>
+        <a class="social-btn--youtube" href="#">Youtube</a>
+      </section>
+      <section class="copyright">
+        <p class="copyright__describe">
+          Website by
+          <a href="#">htmlAcademy</a>
+        </p>
+      </section>
     </footer>
   </body>
 </html>

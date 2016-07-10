@@ -72,3 +72,41 @@
     text-align: center;
   }
 }
+
+.hotel-search {
+  min-height: 293px;
+
+  &__header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__header {
+    font-size: @font-size--hotel-search-h2;
+  }
+
+  &__header,
+  &__describe {
+    width: 57%;
+
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .btn {
+    display: block;
+
+    text-align: center;
+    color: @color-white;
+
+    &--show-search-form {
+      width: 568px;
+      padding: 32.5px;
+
+      font-size: 21px;
+      background-color: @color-brown;
+    }
+  }
+}

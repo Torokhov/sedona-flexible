@@ -4,11 +4,35 @@
   justify-content: space-around;
   align-items: center;
   min-height: 120px;
+
+  background-color: @color-white--opacity;
 }
 
 .hashtag {
   width: 136px;
   &__describe {
     font-size: @font-size--footer-hashtag;
+  }
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 152px;
+}
+
+.social-btn {
+  display: block;
+  width: 46px;
+  height: 48px;
+
+  font-size: 0;
+
+  background-color: @color-blue;
+
+  &:hover {
+    background-color: @color-blue--dark;
   }
 }

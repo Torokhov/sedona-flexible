@@ -152,12 +152,30 @@
   justify-content: space-around;
   align-items: center;
   min-height: 120px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .hashtag {
   width: 136px;
 }
 .hashtag__describe {
   font-size: 1.5rem;
+}
+.social-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 152px;
+}
+.social-btn {
+  display: block;
+  width: 46px;
+  height: 48px;
+  font-size: 0;
+  background-color: #81b3d2;
+}
+.social-btn:hover {
+  background-color: #5b9cc5;
 }
 html {
   font-family: "PTSans", sans-serif;
@@ -200,6 +218,13 @@ ul {
   list-style: none;
 }
 a {
+  text-align: center;
   text-decoration: none;
   color: #000;
+}
+a:hover {
+  color: #81b3d2;
+}
+a:active {
+  color: #808080;
 }

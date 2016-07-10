@@ -24,7 +24,8 @@ module.exports = function(grunt) {
                         "less/components/page-footer.less",
                         "less/components/page-header.less",
                         "less/components/page-main.less",
-                        "less/components/scaffolding.less"],
+                        "less/components/scaffolding.less",
+                        "less/components/forms.less"],
                 tasks: ["less"],
                 options: {
                     nospawn: true

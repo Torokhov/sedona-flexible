@@ -19,7 +19,12 @@ module.exports = function(grunt) {
 
         watch: {
             styles: {
-                files: ["less/style.less"],
+                files: ["less/style.less",
+                        "less/variables.less",
+                        "less/components/page-footer.less",
+                        "less/components/page-header.less",
+                        "less/components/page-main.less",
+                        "less/components/scaffolding.less"],
                 tasks: ["less"],
                 options: {
                     nospawn: true

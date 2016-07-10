@@ -14,8 +14,6 @@
 }
 .main-nav__nav-list {
   position: relative;
-  margin: 0;
-  padding: 0;
   min-height: 56px;
   display: flex;
   flex-direction: row;
@@ -61,6 +59,19 @@
   text-align: center;
   vertical-align: middle;
 }*/
+.main-block-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 26px;
+}
+.main-block-header-wrapper__main-block-header {
+  width: 57%;
+}
+.main-block-header-wrapper__describe {
+  text-align: center;
+}
 html {
   font-family: "PTSans", sans-serif;
   font-size: 14px;
@@ -75,17 +86,21 @@ body {
   min-width: 768px;
 }
 h1 {
+  margin: 0;
   text-align: center;
 }
 h2 {
+  margin: 0;
   font-size: 1.5rem;
   text-align: center;
 }
 h3 {
+  margin: 0;
   font-size: 1.5rem;
   text-align: center;
 }
 h4 {
+  margin: 0;
   font-size: 1rem;
   text-align: center;
 }
@@ -93,6 +108,8 @@ p {
   font-weight: 400;
 }
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 a {

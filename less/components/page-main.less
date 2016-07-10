@@ -14,3 +14,50 @@
     text-align: center;
   }
 }
+
+.reasons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.reason-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 33%;
+  min-height: 256px;
+
+  background-color: @color-gray;
+
+  &__header,
+  &__number,
+  &__describe {
+    width: 60%;
+
+    text-align: center;
+  }
+
+  &--main-reason {
+    color: @text-color--alt;
+
+    background-color: @color-blue;
+  }
+}
+
+.reason-illustrate {
+  flex-grow: 2;
+  width: 67%;
+  min-height: 256px;
+}
+
+.feature {
+  flex-grow: 1;
+  width: 33%;
+  min-height: 256px;
+}

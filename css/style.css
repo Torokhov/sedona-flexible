@@ -72,6 +72,44 @@
 .main-block-header-wrapper__describe {
   text-align: center;
 }
+.reasons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.reason-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 33%;
+  min-height: 256px;
+  background-color: #eeeeee;
+}
+.reason-block__header,
+.reason-block__number,
+.reason-block__describe {
+  width: 60%;
+  text-align: center;
+}
+.reason-block--main-reason {
+  color: #fff;
+  background-color: #81b3d2;
+}
+.reason-illustrate {
+  flex-grow: 2;
+  width: 67%;
+  min-height: 256px;
+}
+.feature {
+  flex-grow: 1;
+  width: 33%;
+  min-height: 256px;
+}
 html {
   font-family: "PTSans", sans-serif;
   font-size: 14px;

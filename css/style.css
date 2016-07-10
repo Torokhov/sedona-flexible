@@ -1,8 +1,12 @@
 .main-header {
   padding: 0 6%;
-  min-height: 568px;
 }
-.main-header h1 {
+.head-wrapper {
+  width: 100%;
+  min-height: 512px;
+  background-color: #81b3d2;
+}
+.head-wrapper h1 {
   display: none;
 }
 .main-nav {
@@ -66,6 +70,7 @@ html {
   text-transform: uppercase;
 }
 body {
+  margin: 0;
   max-width: 1200px;
   min-width: 768px;
 }

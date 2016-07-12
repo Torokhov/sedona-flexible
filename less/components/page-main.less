@@ -3,8 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 215px;
 
   line-height: 26px;
+
+  background-color: @color-white;
 
   &__main-block-header {
     width: 440px;
@@ -54,6 +57,8 @@
   flex-grow: 2;
   width: 67%;
   min-height: 256px;
+
+  overflow: hidden;
 }
 
 .feature {
@@ -63,7 +68,18 @@
   align-items: center;
   flex-grow: 1;
   width: 33%;
-  min-height: 256px;
+  min-height: 332px;
+
+  background-color: @color-white;
+
+  &__icon-wrapper {
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    width: 75px;
+    height: 72px;
+  }
 
   &__header,
   &__describe {
@@ -76,11 +92,15 @@
 .hotel-search {
   min-height: 293px;
 
+  background-color: @color-white;
+
   &__header-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    min-height: 291px;
   }
 
   &__header {

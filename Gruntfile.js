@@ -8,6 +8,11 @@ module.exports = function(grunt) {
         "cssmin"
     ]);
 
+     grunt.registerTask("svg_sprite", [
+        "svgstore",
+        "imagemin"
+    ]);
+
     grunt.initConfig({
         less: {
             style: {
@@ -61,6 +66,43 @@ module.exports = function(grunt) {
                     "css/style.min.css": ["css/style.css"]
                 }
             }
+        },
+
+        sprite:{
+          all: {
+            src: "img/icons/png/*.png",
+            dest: "img/sprites/spritesheet.png",
+            destCss: "css/sprites.css"
         }
+      },
+
+        svgstore: {
+          options: {
+            includeTitleElement: false,
+            svg: {
+              style: 'display:none',
+            },
+            cleanup: [
+              'fill',
+            ],
+          },
+          default : {
+            files: {
+              "img/icons/sprites/sprite.svg": ["img/icons/svg/*.svg"],
+        },
+      },
+    },
+
+    imagemin: {
+      build: {
+        options: {
+          optimizationLevel: 3
+        },
+        files: [{
+          expand: true,
+          src: ["img/icons/sprites/sprite.svg"]
+        }]
+      }
+    },
     });
 };

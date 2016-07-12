@@ -11,6 +11,8 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   min-width: 768px;
+
+  background-color: @color-gray;
 }
 
 h1 {
@@ -20,7 +22,7 @@ h1 {
 }
 
 h2 {
-  margin: 0;
+//  margin: 0;
 
   font-size: @font-size--h2;
   text-align: center;
@@ -63,6 +65,12 @@ a {
   &:active {
     color: @color-black--light;
   }
+}
+
+figure {
+  margin: 0;
+  margin-right: -10px; //убираем отступ справа
+  margin-bottom: -10px; //убираем отступ снизу
 }
 
 

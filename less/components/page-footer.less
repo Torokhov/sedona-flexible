@@ -24,6 +24,7 @@
 }
 
 .social-btn {
+  position: relative;
   display: block;
   width: 46px;
   height: 48px;
@@ -34,6 +35,46 @@
 
   &:hover {
     background-color: @color-blue--dark;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &--facebook {
+    &::before {
+      .icon-font();
+
+      top: 13px;
+      left: 12px;
+      content: "\66";
+      width: 10px;
+      height: 19px;
+    }
+  }
+
+  &--twitter {
+    &::before {
+      .icon-font();
+
+      top: 13px;
+      left: 12px;
+      content: "\74";
+      width: 17px;
+      height: 15px;
+    }
+  }
+
+   &--youtube {
+    &::before {
+      .icon-font();
+
+      top: 13px;
+      left: 9px;
+      content: "\f39e";
+      width: 20px;
+      height: 16px;
+    }
   }
 }
 

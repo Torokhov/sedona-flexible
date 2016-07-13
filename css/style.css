@@ -192,6 +192,7 @@
   width: 152px;
 }
 .social-btn {
+  position: relative;
   display: block;
   width: 46px;
   height: 48px;
@@ -200,6 +201,78 @@
 }
 .social-btn:hover {
   background-color: #5b9cc5;
+}
+.social-btn:active {
+  opacity: 0.7;
+}
+.social-btn--facebook::before {
+  position: absolute;
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  font-size: 19px;
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  color: #fff;
+  speak: none;
+  top: 13px;
+  left: 12px;
+  content: "\66";
+  width: 10px;
+  height: 19px;
+}
+.social-btn--twitter::before {
+  position: absolute;
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  font-size: 19px;
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  color: #fff;
+  speak: none;
+  top: 13px;
+  left: 12px;
+  content: "\74";
+  width: 17px;
+  height: 15px;
+}
+.social-btn--youtube::before {
+  position: absolute;
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  font-size: 19px;
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  color: #fff;
+  speak: none;
+  top: 13px;
+  left: 9px;
+  content: "\f39e";
+  width: 20px;
+  height: 16px;
 }
 .copyright__describe {
   display: flex;
@@ -274,6 +347,12 @@ figure {
   margin-right: -10px;
   margin-bottom: -10px;
 }
+input[type="button"],
+input[type="submit"] {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 .search-form {
   display: flex;
   flex-direction: column;
@@ -292,11 +371,12 @@ figure {
   font-weight: 700;
   color: #fff;
   background-color: #81b3d2;
-  border: none;
-  outline: none;
 }
 .search-form input[type="submit"]:hover {
   background-color: #5b9cc5;
+}
+.search-form input[type="submit"]:active {
+  opacity: 0.7;
 }
 .date-wrapper,
 .people-wrapper,
@@ -363,9 +443,13 @@ figure {
   width: 38px;
   height: 38px;
   background-color: #eeeeee;
-  border: none;
-  outline: none;
 }
 .date-wrapper label {
   width: 111px;
+}
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"), url("../fonts/symbols-sedona.woff2") format("woff2");
 }

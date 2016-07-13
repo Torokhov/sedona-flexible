@@ -26,6 +26,7 @@ module.exports = function(grunt) {
             styles: {
                 files: ["less/style.less",
                         "less/variables.less",
+                        "less/mixins.less",
                         "less/components/page-footer.less",
                         "less/components/page-header.less",
                         "less/components/page-main.less",

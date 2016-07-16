@@ -114,19 +114,53 @@
     line-height: @line-height--hotel-search-h2;
     text-align: center;
   }
+}
 
-  .btn {
-    display: block;
+.btn {
+  display: block;
 
-    text-align: center;
-    color: @color-white;
+  text-align: center;
+  color: @color-white;
 
-    &--show-search-form {
-      width: 568px;
-      padding: 32.5px 0;
+  &--show-search-form {
+    width: 568px;
+    padding: 32.5px 0;
 
-      font-size: 21px;
-      background-color: @color-brown;
+    font-size: 21px;
+    background-color: @color-brown;
+  }
+
+  &--more {
+    width: 110px;
+    padding: 3px 0;
+
+    background-color: @color-blue;
+
+    &:hover {
+      color: @color-white;
+
+      background-color: @color-blue--dark;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  &--check {
+    width: 142px;
+    padding: 3px 0;
+
+    background-color: @color-brown;
+
+    &:hover {
+      color: @color-white;
+
+      background-color: @color-brown--dark;
+    }
+
+    &:active {
+      opacity: 0.7;
     }
   }
 }
@@ -140,6 +174,8 @@
   min-height: 89px;
 
   background-color: @color-white;
+
+  border-bottom: 1px solid @color-gray;
 
   &__head {
 //    margin: 0;
@@ -235,5 +271,88 @@
 
   &__list-two {
     justify-content: flex-end;
+  }
+}
+
+.hotel-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  padding: 0 6%;
+  min-height: 151px;
+
+  background-color: @color-white;
+
+  border-bottom: 1px solid @color-gray;
+
+  &__photo-and-describe-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    min-height: 90px;
+    width: 424px;
+  }
+
+  &__photo {
+    margin: 0;
+    width: 135px;
+    height: 90px;
+  }
+
+  &__describe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    width: 265px;
+    min-height: inherit;
+  }
+
+  &__head {
+    margin: 0;
+    width: inherit;
+
+    text-align: left;
+  }
+
+  &__type-and-price-wrapper,
+  &__btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+//    width: 100%;
+  }
+
+  &__type-and-price-wrapper {
+    width: 200px;
+  }
+
+  &__btn-wrapper {
+    width: inherit;
+  }
+
+  &__rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    min-height: 90px
+  }
+
+  &__stars{
+
+  }
+
+  &__rate-value {
+    font-weight: @font-weight;
+    width: 110px;
+    padding: 3px 0;
+
+    text-align: center;
+
+    background-color: @color-gray;
   }
 }

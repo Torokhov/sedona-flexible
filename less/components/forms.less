@@ -23,6 +23,8 @@
 
     background-color: @color-blue;
 
+    border: none;
+
     &:hover {
       background-color: @color-blue--dark;
     }
@@ -117,10 +119,205 @@
     width: 38px;
     height: 38px;
 
+    border: none;
     background-color: @color-gray;
   }
 
   label {
     width: 111px;
+  }
+}
+
+.hotel-search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 219px;
+  padding: 0 6%;
+//  width: 100px;
+
+  color: @color-white;
+
+//  border: none;
+
+  background-color: @color-blue--dark;
+  background-image: url(../../img/decor/filter-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  label {
+    cursor: pointer;
+  }
+}
+
+.search-criteria-block {
+  margin: 0;
+  min-height: inherit;
+  font-weight: @font-weight;
+
+  &__header {
+    width: 100%;
+
+    font-size: @font-size--form-hotel-search-h2;
+    text-align: left;
+  }
+
+  &--infrastructure,
+  &--hotels-type {
+//    flex-grow: 1;
+//    float: left;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  &--price {
+//    flex-grow: 2;
+//    float: right;
+    width: 30%;
+//    padding: 0 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.criteria-list,
+.range-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 150px;
+}
+
+.criteria-list {
+   align-items: flex-start;
+}
+
+.range-wrapper {
+  align-items: center;
+}
+
+.range-text-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 36px;
+//  margin-bottom: 25px;
+
+  border: 2px solid @color-white;
+  border-radius: 3px;
+
+  &__start-price,
+  &__finish-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: inherit;
+    margin-left: 5px;
+
+    input[type="text"] {
+      width: 80%;
+      padding-left: 5px;
+
+      font-size: @html-size-base;
+      line-height: @html-line-height-base;
+      color: @color-white;
+
+      background-color: rgba(255, 255, 255, 0);
+
+      border: none;
+      outline: none;
+    }
+  }
+  &__start-price {
+    &::after {
+      content: "";
+      width: 2px;
+      height: 22px;
+
+      background-color: @color-white;
+    }
+  }
+}
+
+.price-range {
+  width: 100%;
+  height: 2px;
+
+  background-color: @color-white--opacity;
+
+  &__active {
+    position: relative;
+    height: inherit;
+    width: 70%;
+
+    background-color: @color-white;
+  }
+
+  &__toogle {
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+
+    background-color: @color-white;
+
+    border-radius: 50%;
+
+    &::before {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      content: "";
+      width: 4px;
+      height: 4px;
+
+      border-radius: 50%;
+
+      background-color: @color-gray--dark;
+    }
+
+    &:hover::before {
+      background-color: @color-black;
+    }
+
+    &--min {
+      left: 0%;
+    }
+
+    &--max {
+      left: 100%;
+    }
+  }
+}
+
+.show-result-btn {
+  width: 137px;
+  height: 36px;
+
+  text-transform: uppercase;
+  color: @color-white;
+
+  border: 2px solid @color-white;
+  border-radius: 3px;
+
+  background-color: rgba(255, 255, 255, 0);
+//  outline: none;
+
+  &:hover {
+    color: @color-black;
+
+    background-color: @color-white;
   }
 }

@@ -130,3 +130,110 @@
     }
   }
 }
+
+.hotel-search-result-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: flex-start;
+  padding: 0 6%;
+  min-height: 89px;
+
+  background-color: @color-white;
+
+  &__head {
+//    margin: 0;
+//    height: 22px;
+//    width: 155px;
+    margin-right: 30px;
+    width: 150px;
+
+    text-align: left;
+    line-height: 89px;
+    vertical-align: middle;
+  }
+}
+
+.hotel-sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: center;
+  width: 82%;
+//  height: 22px;
+
+  &__head {
+//    margin: 0;
+//    height: 22px;
+//    width: 75px;
+    margin-right: 30px;
+
+    text-align: left;
+    font-size: @font-size--hotel-sort;
+    line-height: @line-height--hotel-sort;
+    vertical-align: middle;
+  }
+
+  &__list-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    width: 100%;
+  }
+
+  &__list-one,
+  &__list-two {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 50%;
+    min-width: 249px;
+  }
+
+  &__link {
+    font-weight: @font-weight;
+    color: @color-gray--dark;
+
+    border-bottom: 1px dotted @color-blue;
+
+    &--active {
+      color: @color-blue;
+
+      border-bottom: none;
+    }
+
+    &--increase,
+    &--decrease {
+      position: relative;
+      font-size: 0px;
+    }
+
+    &--increase {
+      &::after {
+        position: absolute;
+        left: -20px;
+        content: "\25b2";
+
+        font-size: @html-size-base;
+      }
+    }
+
+    &--decrease {
+      &::after {
+        position: absolute;
+        content: "\25bc";
+
+        font-size: @html-size-base;
+      }
+    }
+  }
+
+  &__list-one {
+    justify-content: space-between;
+  }
+
+  &__list-two {
+    justify-content: flex-end;
+  }
+}

@@ -343,7 +343,27 @@
   }
 
   &__stars{
+    font-size: @font-size--stars;
+    color: @color-blue;
+    text-align: right;
 
+    &--four {
+      &::before {
+        content: "\2605  \2605  \2605  \2605";
+      }
+    }
+
+    &--three {
+      &::before {
+        content: "\2605  \2605  \2605";
+      }
+    }
+
+    &--two {
+      &::before {
+        content: "\2605  \2605";
+      }
+    }
   }
 
   &__rate-value {

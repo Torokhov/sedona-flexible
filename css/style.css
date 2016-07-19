@@ -327,6 +327,20 @@
   align-self: center;
   min-height: 90px;
 }
+.hotel-card__stars {
+  font-size: 1.5rem;
+  color: #81b3d2;
+  text-align: right;
+}
+.hotel-card__stars--four::before {
+  content: "\2605  \2605  \2605  \2605";
+}
+.hotel-card__stars--three::before {
+  content: "\2605  \2605  \2605";
+}
+.hotel-card__stars--two::before {
+  content: "\2605  \2605";
+}
 .hotel-card__rate-value {
   font-weight: 400;
   width: 110px;
@@ -660,6 +674,29 @@ input[type="submit"] {
 }
 .criteria-list {
   align-items: flex-start;
+}
+.criteria-list__item {
+  position: relative;
+}
+.criteria-list input[type="checkbox"] {
+  display: none;
+}
+.criteria-list label {
+  margin-left: 30px;
+}
+.criteria-list input[type="checkbox"]:checked + label::before {
+  position: absolute;
+  content: "\2611";
+  top: 0;
+  left: 0;
+  font-size: 26px;
+}
+.criteria-list input[type="checkbox"] + label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "\2610";
+  font-size: 26px;
 }
 .range-wrapper {
   align-items: center;

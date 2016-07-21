@@ -170,6 +170,13 @@
   font-size: 21px;
   background-color: #766357;
 }
+.btn--show-search-form:hover {
+  color: #fff;
+  background-color: #594a41;
+}
+.btn--show-search-form:active {
+  opacity: 0.7;
+}
 .btn--more {
   width: 110px;
   padding: 3px 0;

@@ -140,15 +140,15 @@
   text-align: center;
 }
 .hotel-search {
-  min-height: 293px;
   background-color: #fff;
 }
 .hotel-search__header-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  min-height: 291px;
+  padding-top: 30px;
+  min-height: 261px;
 }
 .hotel-search__header {
   font-size: 2.15rem;
@@ -158,6 +158,14 @@
   width: 500px;
   line-height: 1.15rem;
   text-align: center;
+}
+.map {
+  height: 472px;
+  width: 100%;
+  background-image: url("../../img/decor/map.jpg");
+  background-repeat: no-repeat;
+  background-position: -40px -155px;
+  z-index: 0;
 }
 .btn {
   display: block;
@@ -475,6 +483,7 @@
 .academy-icon {
   width: 113px;
   height: 39px;
+  fill: #d5d5d5;
 }
 html {
   font-family: "PTSans", sans-serif;
@@ -535,7 +544,8 @@ input[type="submit"] {
   cursor: pointer;
 }
 .search-form {
-  display: flex;
+  position: absolute;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;

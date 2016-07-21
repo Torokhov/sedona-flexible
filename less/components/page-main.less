@@ -90,17 +90,18 @@
 }
 
 .hotel-search {
-  min-height: 293px;
+//  min-height: 768px;
 
   background-color: @color-white;
 
   &__header-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
-    min-height: 291px;
+    padding-top: 30px;
+    min-height: 261px;
   }
 
   &__header {
@@ -114,6 +115,18 @@
     line-height: @line-height--hotel-search-h2;
     text-align: center;
   }
+}
+
+.map {
+//  position: absolute;
+//  left: 0;
+  height: 472px;
+  width: 100%;
+
+  background-image: url("../../img/decor/map.jpg");
+  background-repeat: no-repeat;
+  background-position: -40px -155px;
+  z-index: 0;
 }
 
 .btn {

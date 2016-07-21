@@ -600,8 +600,11 @@ input[type="submit"] {
   padding-left: 30px;
   width: 81px;
 }
+.date-wrapper {
+  position: relative;
+}
 .date-wrapper input[type="text"] {
-  width: 288px;
+  width: 322px;
   padding: 11px 0;
   padding-left: 20px;
   text-transform: uppercase;
@@ -614,14 +617,69 @@ input[type="submit"] {
 .date-wrapper input[type="text"]:focus {
   background-color: #fff;
 }
-.date-wrapper input[type="button"] {
-  width: 38px;
-  height: 38px;
-  border: none;
-  background-color: #eeeeee;
-}
 .date-wrapper label {
   width: 111px;
+}
+.btn-calendar {
+  position: absolute;
+  top: 7px;
+  left: 420px;
+  width: 21px;
+  height: 22px;
+  background-image: url(../img/sprites/spritesheet.png);
+  background-position: -42px -70px;
+  cursor: pointer;
+}
+.btn-calendar:hover {
+  background-position: 0px -70px;
+}
+.btn-calendar:active {
+  background-position: -21px -70px;
+}
+.btn-minus,
+.btn-plus {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  background-color: #eeeeee;
+}
+.btn-minus {
+  cursor: pointer;
+}
+.btn-minus::before {
+  position: absolute;
+  left: 13px;
+  top: 17.5px;
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-image: url(../img/sprites/spritesheet.png);
+  background-position: -120px -70px;
+}
+.btn-minus:hover::before {
+  background-position: -108px -70px;
+}
+.btn-minus:active::before {
+  background-position: -96px -70px;
+}
+.btn-plus {
+  cursor: pointer;
+}
+.btn-plus::before {
+  position: absolute;
+  top: 13.5px;
+  left: 13.5px;
+  content: "";
+  width: 11px;
+  height: 11px;
+  background-image: url(../img/sprites/spritesheet.png);
+  background-position: -85px -70px;
+}
+.btn-plus:hover::before {
+  background-position: -74px -70px;
+}
+.btn-plus:active::before {
+  background-position: -63px -70px;
 }
 .hotel-search-form {
   display: flex;

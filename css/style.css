@@ -155,7 +155,7 @@
 }
 .hotel-search__header,
 .hotel-search__describe {
-  width: 57%;
+  width: 500px;
   line-height: 1.15rem;
   text-align: center;
 }

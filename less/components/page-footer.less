@@ -5,7 +5,7 @@
   align-items: center;
   min-height: 120px;
 
-  background-color: @color-white--opacity;
+  background-color: @color-white;
 }
 
 .hashtag {
@@ -94,12 +94,19 @@
   a {
     font-size: 0;
 //    color: @color-blue;
+    display: block;
+    width: 113px;
+    height: 39px;
+
+    background-image: url(../img/sprites/spritesheet.png);
+    background-position: 0px -70px;
+
+    &:hover {
+      background-position: -138px -39px;
+    }
+
+    &:active {
+      background-position: -138px 0px;
+    }
   }
-}
-
-.academy-icon {
-  width: 113px;
-  height: 39px;
-
-  fill: @color-gray--dark;
 }

@@ -18,19 +18,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-calendar-icon--hover {
   background-image: url(../img/sprites/spritesheet.png);
-  background-position: 0px -70px;
+  background-position: -159px -78px;
   width: 21px;
   height: 22px;
 }
 .icon-calendar-icon-down {
   background-image: url(../img/sprites/spritesheet.png);
-  background-position: -21px -70px;
+  background-position: -180px -78px;
   width: 21px;
   height: 22px;
 }
 .icon-calendar-icon {
   background-image: url(../img/sprites/spritesheet.png);
-  background-position: -42px -70px;
+  background-position: -138px -78px;
   width: 21px;
   height: 22px;
 }
@@ -40,39 +40,57 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 138px;
   height: 70px;
 }
+.icon-htmlacademy-logo-active {
+  background-image: url(../img/sprites/spritesheet.png);
+  background-position: -138px 0px;
+  width: 113px;
+  height: 39px;
+}
+.icon-htmlacademy-logo-hover {
+  background-image: url(../img/sprites/spritesheet.png);
+  background-position: -138px -39px;
+  width: 113px;
+  height: 39px;
+}
+.icon-htmlacademy-logo {
+  background-image: url(../img/sprites/spritesheet.png);
+  background-position: 0px -70px;
+  width: 113px;
+  height: 39px;
+}
 .icon-icon-minus-down {
   background-image: url(../img/sprites/spritesheet.png);
-  background-position: -96px -70px;
+  background-position: -234px -78px;
   width: 12px;
   height: 3px;
 }
 .icon-icon-minus-hover {
   background-image: url(../img/sprites/spritesheet.png);
-  background-position: -108px -70px;
+  background-position: -234px -81px;
   width: 12px;
   height: 3px;
 }
 .icon-icon-minus {
   background-image: url(../img/sprites/spritesheet.png);
-  background-position: -120px -70px;
+  background-position: -234px -84px;
   width: 12px;
   height: 3px;
 }
 .icon-icon-plus-down {
   background-image: url(../img/sprites/spritesheet.png);
-  background-position: -63px -70px;
+  background-position: -201px -78px;
   width: 11px;
   height: 11px;
 }
 .icon-icon-plus-hover {
   background-image: url(../img/sprites/spritesheet.png);
-  background-position: -74px -70px;
+  background-position: -212px -78px;
   width: 11px;
   height: 11px;
 }
 .icon-icon-plus {
   background-image: url(../img/sprites/spritesheet.png);
-  background-position: -85px -70px;
+  background-position: -223px -78px;
   width: 11px;
   height: 11px;
 }
